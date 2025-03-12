@@ -8,6 +8,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        #mobile-menu {
+            transition: max-height 0.3s ease-out;
+            overflow: hidden;
+            max-height: 0;
+        }
+        #mobile-menu.open {
+            max-height: 500px; /* Adjust as needed for content */
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -24,10 +34,16 @@
                     <a href="contact.html" class="text-white hover:text-green-200">Contact</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-white focus:outline-none">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="index.html" class="block text-white hover:text-green-200 px-4 py-2">Home</a>
+                <a href="blog.html" class="block text-white hover:text-green-200 px-4 py-2">Blog</a>
+                <a href="about.html" class="block text-white hover:text-green-200 px-4 py-2">About</a>
+                <a href="contact.html" class="block text-white hover:text-green-200 px-4 py-2">Contact</a>
             </div>
         </div>
     </nav>
@@ -44,9 +60,76 @@
 
     <!-- Main Content -->
     <main class="max-w-4xl mx-auto px-4 py-16">
-        <article class="prose max-w-none mx-auto">
-            <!-- Content here -->
-        </article>
+        <div class="grid gap-8">
+            <!-- Post 1 - Chai Culture -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="./assets/images/chai-culture.jpg" alt="Traditional Pakistani chai being poured" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Culture</span>
+                            <span class="text-gray-500 text-sm ml-4">March 22, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/chai-culture.html" class="hover:text-green-700">Chai Culture: More Than Just Tea</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">Explore the rich tradition of chai in Pakistan, where every cup tells a story of hospitality, community, and cherished moments shared over steaming cups of tea...</p>
+                        <a href="posts/chai-culture.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 2 - Truck Art -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="./assets/images/Truck_Art.jpg" alt="Colorfully decorated Pakistani truck" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Culture</span>
+                            <span class="text-gray-500 text-sm ml-4">March 21, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/truck-art.html" class="hover:text-green-700">Truck Art: Pakistan's Moving Canvas</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">Discover the vibrant world of Pakistani truck art, where vehicles become moving masterpieces and cultural storytellers on wheels...</p>
+                        <a href="posts/truck-art.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Post 3 - Biryani -->
+            <article class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="./assets/images/biryani_Art.jpg" alt="Biryani dish" class="w-full h-48 md:h-full object-cover">
+                    </div>
+                    <div class="p-6 md:w-2/3">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Cuisine</span>
+                            <span class="text-gray-500 text-sm ml-4">March 20, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/biryani-journey.html" class="hover:text-green-700">The Art of Biryani: A Journey Through Pakistan's Most Beloved Dish</a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">Discover the rich history, regional variations, and secret techniques behind Pakistan's iconic Biryani...</p>
+                        <a href="posts/biryani-journey.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <span class="px-4 py-2 text-sm font-medium text-white bg-green-800 border border-green-800 rounded-md">1</span>
+                <a href="blog-page-2.html" class="px-4 py-2 text-sm font-medium text-green-800 bg-white border border-gray-300 rounded-md hover:bg-gray-50">2</a>
+                <a href="blog-page-2.html" class="px-4 py-2 text-sm font-medium text-green-800 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Next</a>
+            </nav>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -80,5 +163,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Toggle -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        });
+    </script>
 </body>
 </html> 

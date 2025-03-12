@@ -7,6 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -23,11 +28,18 @@
                     <a href="../contact.html" class="text-white hover:text-green-200">Contact</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-white focus:outline-none">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
             </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="../index.html" class="block px-4 py-2 text-white hover:bg-green-700">Home</a>
+            <a href="../blog.html" class="block px-4 py-2 text-white hover:bg-green-700">Blog</a>
+            <a href="../about.html" class="block px-4 py-2 text-white hover:bg-green-700">About</a>
+            <a href="../contact.html" class="block px-4 py-2 text-white hover:bg-green-700">Contact</a>
         </div>
     </nav>
 
@@ -86,5 +98,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
-</html> 
+</html>

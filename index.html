@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the rich culture and traditions of Pakistan through authentic stories and experiences">
+    <meta name="keywords" content="Pakistan, culture, traditions, stories, blog">
+    <title>Pakistani Chronicles - Exploring Pakistan's Rich Heritage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pk-green': '#01411C',
+                        'pk-white': '#FFFFFF',
+                        'pk-accent': '#FFB81C'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-white">Pakistani Chronicles</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-green-200">Home</a>
+                    <a href="blog.html" class="text-white hover:text-green-200">Blog</a>
+                    <a href="about.html" class="text-white hover:text-green-200">About</a>
+                    <a href="contact.html" class="text-white hover:text-green-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 pb-12 bg-gradient-to-br from-green-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800 mb-6">Welcome to Pakistani Chronicles</h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Discover the vibrant culture, rich traditions, and timeless stories of Pakistan through our authentic narratives.</p>
+                <a href="blog.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-800 hover:bg-green-700 transition-colors duration-200">
+                    Explore Our Stories
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="py-12 md:py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-green-800 mb-8">Featured Stories</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Featured Post 1 - Chai Culture -->
+                <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <img src="./assets/images/chai-culture.jpg" alt="Traditional Pakistani chai" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Culture</span>
+                            <span class="text-gray-500 text-sm ml-4">March 22, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/chai-culture.html" class="hover:text-green-700">Chai Culture: More Than Just Tea</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Explore the rich tradition of chai in Pakistan, where every cup tells a story...</p>
+                        <a href="posts/chai-culture.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Featured Post 2 - Truck Art -->
+                <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <img src="./assets/images/Truck_Art.jpg" alt="Pakistani truck art" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Art</span>
+                            <span class="text-gray-500 text-sm ml-4">March 21, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/truck-art.html" class="hover:text-green-700">Truck Art: Pakistan's Moving Canvas</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Discover the vibrant world of Pakistani truck art, where vehicles become moving masterpieces...</p>
+                        <a href="posts/truck-art.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Featured Post 3 - Biryani -->
+                <article class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <img src="./assets/images/biryani_Art.jpg" alt="Pakistani Biryani" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Cuisine</span>
+                            <span class="text-gray-500 text-sm ml-4">March 20, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-green-800 mb-2">
+                            <a href="posts/biryani-journey.html" class="hover:text-green-700">The Art of Biryani</a>
+                        </h3>
+                        <p class="text-gray-600 mb-4">Journey through Pakistan's most beloved dish and its rich culinary heritage...</p>
+                        <a href="posts/biryani-journey.html" class="text-green-800 hover:text-green-700 font-medium">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 md:py-20 bg-green-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Stay Connected</h2>
+                <p class="text-green-100 mb-8 max-w-2xl mx-auto">Subscribe to our newsletter to receive the latest stories about Pakistani culture and traditions.</p>
+                <form class="max-w-md mx-auto flex gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-green-500">
+                    <button type="submit" class="px-6 py-3 bg-white text-green-800 font-medium rounded-lg hover:bg-green-100 transition-colors duration-200">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Pakistani Chronicles</h3>
+                    <p class="text-green-100">Exploring the rich culture, traditions, and stories of Pakistan.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-green-100 hover:text-white">Home</a></li>
+                        <li><a href="blog.html" class="text-green-100 hover:text-white">Blog</a></li>
+                        <li><a href="about.html" class="text-green-100 hover:text-white">About</a></li>
+                        <li><a href="contact.html" class="text-green-100 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-100 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-green-100 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-green-100 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-green-700 mt-12 pt-8 text-center">
+                <p class="text-green-100">&copy; 2024 Pakistani Chronicles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

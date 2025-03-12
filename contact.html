@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us to share your stories or inquire about collaborations">
+    <meta name="keywords" content="contact us, Pakistani blog, feedback, inquiries, collaboration">
+    <title>Contact Us - Pakistani Chronicles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pk-green': '#01411C',
+                        'pk-white': '#FFFFFF',
+                        'pk-accent': '#FFB81C'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-white">Pakistani Chronicles</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-white hover:text-green-200">Home</a>
+                    <a href="blog.html" class="text-white hover:text-green-200">Blog</a>
+                    <a href="about.html" class="text-white hover:text-green-200">About</a>
+                    <a href="contact.html" class="text-white hover:text-green-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        <div class="bg-white shadow-sm rounded-lg p-8">
+            <h1 class="text-3xl font-bold text-green-800 mb-6">Contact Us</h1>
+            
+            <div class="mb-8">
+                <p class="text-gray-600">
+                    Have questions or suggestions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                </p>
+            </div>
+
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="w-full bg-green-800 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Office Location</h3>
+                    <p class="text-gray-600">
+                        F-7 Markaz<br>
+                        Islamabad, Pakistan
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
+                    <p class="text-gray-600">
+                        info@pakistanichronicles.com<br>
+                        support@pakistanichronicles.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <p>&copy; 2024 Pakistani Chronicles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

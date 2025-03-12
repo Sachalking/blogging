@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Biryani - Pakistani Chronicles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pk-green': '#01411C',
+                        'pk-accent': '#00733E',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-green-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-white">Pakistani Chronicles</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-white hover:text-green-200">Home</a>
+                    <a href="../blog.html" class="text-white hover:text-green-200">Blog</a>
+                    <a href="../about.html" class="text-white hover:text-green-200">About</a>
+                    <a href="../contact.html" class="text-white hover:text-green-200">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-16">
+        <article class="prose max-w-none mx-auto">
+            <!-- Article Header -->
+            <header class="mb-8">
+                <div class="flex items-center mb-4 space-x-4">
+                    <span class="bg-pk-green/10 text-pk-green text-sm font-medium px-3 py-1 rounded">Cuisine</span>
+                    <time class="text-gray-500">March 20, 2024</time>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-900 mb-4">The Art of Biryani: A Journey Through Pakistan's Most Beloved Dish</h1>
+                <div class="prose max-w-none text-gray-500 mb-6">
+                    Embark on a flavorful exploration of Pakistan's culinary crown jewel - the legendary Biryani. From its royal origins to modern-day variations, discover what makes this aromatic rice dish a national treasure.
+                </div>
+                <img src="../../assets/images/biryani_Art.jpg" alt="A plate of aromatic Biryani" class="w-full h-auto object-cover rounded-lg shadow-lg mb-6">
+            </header>
+
+            <!-- Article Content -->
+            <div class="prose max-w-none text-gray-700">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">A Royal Legacy</h2>
+                <p class="mb-6">
+                    Biryani's journey in the subcontinent began in the royal kitchens of the Mughal Empire. This exquisite dish, with its perfect harmony of fragrant rice, tender meat, and aromatic spices, has evolved into countless regional variations across Pakistan, each telling its own unique story of local traditions and tastes.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Regional Variations</h2>
+                <p class="mb-6">
+                    From the streets of Karachi to the historic lanes of Lahore, each region of Pakistan has put its own spin on this beloved dish:
+                </p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li><strong>Karachi Biryani:</strong> Known for its spicy kick and distinctive yellow color</li>
+                    <li><strong>Lahori Biryani:</strong> Characterized by its mild flavors and use of premium long-grain rice</li>
+                    <li><strong>Sindhi Biryani:</strong> Distinguished by its use of plums and potatoes</li>
+                    <li><strong>Peshawar Biryani:</strong> Notable for its simplicity and focus on meat quality</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">The Secret Techniques</h2>
+                <p class="mb-6">
+                    The art of making perfect biryani lies in its technique. The layering process, known as "dum," involves sealing the pot with dough and slow-cooking the rice and meat together, allowing the flavors to meld perfectly. The rice must be parboiled to exactly the right degree, and the meat marinated with precision.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Cultural Significance</h2>
+                <p class="mb-6">
+                    In Pakistan, biryani is more than just a dish - it's a celebration. From wedding feasts to Eid festivities, no special occasion is complete without a generous serving of this aromatic delicacy. It's a dish that brings people together, crossing all social and economic boundaries.
+                </p>
+
+                <blockquote class="border-l-4 border-pk-green pl-4 italic my-8">
+                    "The true test of a great biryani lies not in its spices or meat, but in how it brings people together at the table."
+                </blockquote>
+
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Modern Interpretations</h2>
+                <p class="mb-6">
+                    While traditional biryani remains supreme, modern chefs are experimenting with contemporary interpretations. From vegetarian versions to fusion varieties, biryani continues to evolve while maintaining its essential character.
+                </p>
+            </div>
+
+            <!-- Share Section -->
+            <div class="border-t border-gray-200 mt-8 pt-8">
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">Share this article</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-green-500"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="text-center">
+                <p>&copy; 2024 Pakistani Chronicles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
